@@ -1,14 +1,13 @@
 # Hill-cipher
 
-## Caesar Cipher
+## A bit more complex than Caesar Cipher
 
 ![alt text](https://i.imgur.com/XZcUCMU.png "caesar cipher")
 
 Caesar Cipher is a simple encyption technique to encypt messages by adding or multiplying each character by a constant offset.
 Because each character takes up a *single byte (8-bits)*, we can offset each character by offsetting with another 1B value. However,
-this means that there are only 2^8 - 1 ways (subtract 1 to acount for the original value) to encypt the message. By reading the original values and putting them inside a 2 dimensional
-array, we can then multiply that array with an invertible matrix to make it harder to decrypt. The only way to decrypt, then, is if you
-have the inverted matrix in which you cross product to get the original message. 
+this means that there are only 2^8 - 1 ways (subtract 1 to acount for the original value) to encypt the message. Hill cipher goes a bit further by reading the original values and putting them inside a 2 dimensional array, we can then multiply that array with an invertible matrix to make it harder to decrypt. The only way to decrypt, then, is if you have the inverted matrix in which you cross product to get the original message. The 
+security of Hill Cipher more secured than Caesar Cipher, but it's generally not that secured compared to other modern cryptographies. 
 
 ## 2 Dimensional Array
 
